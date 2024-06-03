@@ -3,20 +3,20 @@ import Contact from "./components/Contact";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
+import TimeLine from "./components/TimeLine";
 import Work from "./components/Work";
-import {Link} from 'react-scroll'
-
 
 function App() {
   return (
-   <>
-  <Navbar/>
-  <Home/>
-  <About/>
-  <Skills/>
-  <Work/>
-  <Contact/>
-   </>
+    <>
+      <Navbar />
+      <Home />
+      <About />
+      <TimeLine />
+      <Skills />
+      <Work />
+      <Contact />
+    </>
   );
 }
 
