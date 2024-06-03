@@ -21,6 +21,14 @@
   height: 250px;
 }
 
+.a {
+  transition: 0.2s all ease-in;
+}
+
+.active {
+  border-bottom: 2px solid #db2877;
+}
+
 .content-div:hover {
   background-image: linear-gradient(
     to right,
