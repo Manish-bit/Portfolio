@@ -5,7 +5,7 @@ import {
 
 const TimeLine = () => {
   return (
-    <div className="timeline bg-[#0a192f] flex flex-col gap-10">
+    <div className="timeline bg-[#0a192f] flex flex-col gap-10" name="timeline">
       <p className="text-4xl inline border-b-4 border-pink-600 font-bold text-gray-300 mx-auto">
         TimeLine
       </p>

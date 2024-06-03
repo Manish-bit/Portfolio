@@ -12,19 +12,22 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
-    const [nav,setNav] = useState(false)
-    const handleNav = ()=>{
-        setNav(!nav)
-    }
+  const [nav, setNav] = useState(false);
+  const handleNav = () => {
+    setNav(!nav);
+  };
 
   return (
     <div className="fixed w-full h-[80px] flex justify-end items-center px-4 bg-[#0a192f] text-gray-300">
       <ul className="hidden md:flex">
-        <Link to="home" smooth={true} spy={true} activeClass="active" >
+        <Link to="home" smooth={true} spy={true} activeClass="active">
           <li>Home</li>
         </Link>
         <Link to="about" smooth={true} spy={true} activeClass="active">
           <li>About</li>
+        </Link>
+        <Link to="timeline" smooth={true} spy={true} activeClass="active">
+          <li>TimeLine</li>
         </Link>
         <Link to="skills" smooth={true} spy={true} activeClass="active">
           <li>Skills</li>
