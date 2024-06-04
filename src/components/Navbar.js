@@ -17,6 +17,16 @@ const Navbar = () => {
     setNav(!nav);
   };
 
+  const handleClick = () => {
+    const pdfUrl = "manishcv.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "manishcv.pdf"; // specify the filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="fixed w-full h-[80px] flex justify-end items-center px-4 bg-[#0a192f] text-gray-300">
       <ul className="hidden md:flex">
@@ -65,16 +75,18 @@ const Navbar = () => {
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500">
             <a
-              href="/"
+              href="https://linkedin.com/in/manish--aryal"
               className="flex justify-between items-center w-full text-gray-300"
+              target="blank"
             >
               Linkedin <FaLinkedin size={30} />
             </a>
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
             <a
-              href="/"
+              href="https://github.com/Manish-bit"
               className="flex justify-between items-center w-full text-gray-300"
+              target="blank"
             >
               GitHub <FaGithub size={30} />
             </a>
@@ -91,6 +103,7 @@ const Navbar = () => {
             <a
               href="/"
               className="flex justify-between items-center w-full text-gray-300"
+              onClick={handleClick}
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>
