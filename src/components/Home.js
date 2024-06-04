@@ -2,6 +2,7 @@ import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-scroll";
 import Profile from "../assets/profile.jpg";
+import { ReactTyped } from "react-typed";
 
 const Home = () => {
   return (
@@ -11,13 +12,23 @@ const Home = () => {
         <div className="w-[200px] h-[100px] mx-auto aspect-auto">
           <img src={Profile} alt="error" className="w-[100%] rounded-[50%]" />
         </div>
-        <div className="mt-[10rem]">
+        <div className="mt-[10rem] flex flex-col items-center">
           <p className="text-pink-600">Hi,my name is </p>
           <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">
             Manish Aryal
           </h1>
           <h2 className="text-4xl sm:text-7xl font-bold  text-[#8892b0]">
-            I'm a Full Stack Developer.{" "}
+            I am a{" "}
+            <ReactTyped
+              strings={[
+                "Full Stack Developer",
+                "Software Engineer",
+                "Tech Enthusiast",
+              ]}
+              typeSpeed={50}
+              backSpeed={50}
+              loop
+            />
           </h2>
           <p className="text-[#8892b0] py-4 max-w-[700px]">
             I'm a full stack developer specializing in building(and occasionally
