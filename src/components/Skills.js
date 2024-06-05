@@ -10,7 +10,7 @@ import Mongo from "../assets/mongo.png";
 
 const Skills = () => {
   return (
-    <div className="bg-[#0a192f] text-gray-300 w-full h-full" name="skills">
+    <div className="bg-[#0a192f] text-gray-300 w-full h-[40rem]" name="skills">
       {/* Container */}
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
