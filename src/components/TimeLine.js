@@ -61,7 +61,7 @@ const TimeLine = () => {
           // icon={<WorkIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-            Associate software engineer
+            Software engineer
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
             Lalitpur, Nepal

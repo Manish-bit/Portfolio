@@ -7,10 +7,12 @@ import Node from "../assets/node.png";
 import GitHub from "../assets/github.png";
 import Tailwind from "../assets/tailwind.png";
 import Mongo from "../assets/mongo.png";
+import TypeScript from "../assets/typescript.png";
+import Docker from "../assets/docker.png";
 
 const Skills = () => {
   return (
-    <div className="bg-[#0a192f] text-gray-300 w-full h-[40rem]" name="skills">
+    <div className="bg-[#0a192f] text-gray-300 w-full" name="skills">
       {/* Container */}
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
@@ -51,6 +53,15 @@ const Skills = () => {
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 hover:cursor-pointer">
             <img src={Tailwind} alt="/" className="w-20 mx-auto" />
             <p>TAILWIND</p>
+          </div>
+
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 hover:cursor-pointer">
+            <img src={TypeScript} alt="/" className="w-20 mx-auto" />
+            <p>TYPESCRIPT</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 hover:cursor-pointer">
+            <img src={Docker} alt="/" className="w-20 mx-auto" />
+            <p>DOCKER</p>
           </div>
         </div>
       </div>
